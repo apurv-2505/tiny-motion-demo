@@ -1,16 +1,13 @@
 # demo_app
 
-A new Flutter project.
+A demo app created while learning flutter made as a copy/clone of Tinymotion project.
 
-## Getting Started
+## how to run
 
-This project is a starting point for a Flutter application.
+Make sure the server is running on the port 4000 [this one](https://github.com/raj-upadhyayy/tinymotion-be-mock)
 
-A few resources to get you started if this is your first Flutter project:
+## Evidences
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Email working .webm](https://github.com/user-attachments/assets/a0b2946f-9b8d-4e6b-abe0-7e774e3c1889)
+- https://github.com/user-attachments/assets/c271c33e-3c41-4450-9d32-4747703c8802
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
