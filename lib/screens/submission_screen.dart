@@ -73,7 +73,7 @@ class SubmissionScreen extends ConsumerWidget {
             );
 
             if (context.mounted) {
-              Navigator.pushReplacement(
+              Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => SuccessfulSubmissionScreen(),

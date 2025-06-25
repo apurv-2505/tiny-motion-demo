@@ -1,5 +1,7 @@
+import 'package:demo_app/graphql/auth_service.dart';
+import 'package:demo_app/screens/login_screen.dart';
 import 'package:demo_app/theme/theme.dart';
-import 'package:demo_app/widgets/appbar.dart';
+
 import 'package:flutter/material.dart';
 
 class SuccessfulSubmissionScreen extends StatelessWidget {
@@ -8,7 +10,22 @@ class SuccessfulSubmissionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(titleText: "Successful Submission"),
+      appBar: AppBar(
+        title: Text('Successful Submission'),
+        automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            onPressed: () {
+              logoutClinician();
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => LoginScreen()),
+              );
+            },
+          ),
+        ],
+      ),
       body: Padding(
         padding: EdgeInsets.all(16),
         child: Column(

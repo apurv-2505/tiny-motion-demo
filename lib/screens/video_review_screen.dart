@@ -33,6 +33,11 @@ class _VideoReviewScreenState extends State<VideoReviewScreen> {
     try {
       _videoController = VideoPlayerController.file(File(widget.videoPath));
       await _videoController!.initialize();
+
+      _videoController!.addListener(() {
+        if (mounted) setState(() {});
+      });
+
       setState(() {
         _isInitialized = true;
       });
