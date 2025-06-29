@@ -1,0 +1,10 @@
+{
+  "name": "appium-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node appbar.test.js"
+  },
+  "dependencies": {
+    "webdriverio": "^8.0.0"
+  }
+}
